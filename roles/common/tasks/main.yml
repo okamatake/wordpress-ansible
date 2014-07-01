@@ -12,3 +12,5 @@
   copy: src=iptables-save dest=/etc/sysconfig/iptables
   notify: restart iptables
 
+- name: Set up SELinux
+  selinux: policy=targeted state=enforcing

@@ -17,3 +17,8 @@ describe file('/etc/nginx/conf.d/default.conf') do
   it { should be_file }
   its(:content) { should match /server_name\s+localhost/ }
 end
+
+describe file('/etc/yum.repos.d/nginx.repo') do
+  it { should be_file }
+end
+

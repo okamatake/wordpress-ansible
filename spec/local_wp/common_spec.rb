@@ -9,7 +9,7 @@ describe yumrepo('epel') do
 end
 
 describe selinux do
-  it { should be_permissive }
+  it { should be_enforcing }
 end
 
 describe service('iptables') do
