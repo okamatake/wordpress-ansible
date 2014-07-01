@@ -1,0 +1,6 @@
+.*.swp
+/.bundle
+/.vagrant
+/spec/tmp
+/vendor/bundle
+
